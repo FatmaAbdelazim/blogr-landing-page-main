@@ -23,7 +23,7 @@ body {
 
 .container {
     max-width: 100%;
-
+    overflow-x: hidden;
 }
 
 .row {
@@ -63,17 +63,24 @@ nav {
 .none{
  display: none;   
 }
-.navPart1 div{
+
+#company , #product , #connect{
     width: 8rem;
     background-color: white;
     color: black;
     z-index: 1;
-    padding: 0.5rem;
     border-radius: 0.3rem;
-    position: relative;
-    top: 6rem;
-    right: 9rem;
-
+    position: absolute;
+    top: 5rem;
+    left: 18rem;
+}
+#company{
+    top: 5rem;
+    left: 27rem;
+}
+#connect{
+    top: 5rem;
+    left: 35rem;
 }
 .navPart1 div ul{
     list-style: none;
