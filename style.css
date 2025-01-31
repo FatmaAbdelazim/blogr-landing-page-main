@@ -25,7 +25,6 @@ body {
     max-width: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
-
 }
 
 .row {
@@ -84,7 +83,7 @@ nav {
     top: 5rem;
     left: 35rem;
 }
-.navPart1 div ul{
+ ul{
     list-style: none;
 }
 .navPart1 div ul li{
@@ -163,7 +162,7 @@ a:hover{
     text-decoration: underline;
 }
 
-.rowDown{
+.rowDown,.row4Down{
     display: flex;
     max-width: 95%;
     justify-content: center;
@@ -177,14 +176,11 @@ a:hover{
     align-items: center;
 }
 
-.left{
+.left,.right,.right4,.left4{
     width: 50%;
 }
 .up,.down{
      padding: 3rem;
-}
-.right{
-    width: 50%;
 }
 .right img{
     width: 100%;
@@ -247,4 +243,43 @@ h2{
 
 p{
     line-height: 1.7rem;
+}
+.right4 img{
+    width: 120%;
+    height: 37rem;
+    position: relative;
+    right: 13.5rem;
+}
+
+.left .up,.left .down{
+    padding-right: 1rem;
+}
+
+.part5{
+    width: 100%;
+    background-color: hsl(240, 10%, 16%);
+    display: flex;
+    padding-inline: 8rem;
+    justify-content: space-between;
+    border-radius: 0 3.5rem 0 0;
+    padding-block: 3rem;
+    margin-top: 3rem;
+}
+
+.part5 li{
+    color: hsl(207, 13%, 34%);
+    margin: 0.5rem;
+    padding: 0.5rem;
+    list-style: none;
+}
+.part5 img{
+    width: 7rem;
+    height: 3rem;
+}
+.part5 li:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+.part5 a{
+  margin-left: 1rem ;
 }
