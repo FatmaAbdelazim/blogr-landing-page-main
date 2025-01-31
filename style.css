@@ -24,6 +24,8 @@ body {
 .container {
     max-width: 100%;
     overflow-x: hidden;
+    overflow-y: hidden;
+
 }
 
 .row {
@@ -204,4 +206,45 @@ h2{
 }
 .up p , .down p{
     color: hsl(207, 13%, 34%);
+}
+
+
+
+.row3{
+    display: flex;
+    background-color: hsl(237, 17%, 21%);
+    height: 22rem;
+    width: 100%;
+    border-radius: 0 5rem 0 5rem;
+}
+.row3Left{
+    width: 50%;
+    margin-left: 3rem;
+    background-image: url(images/bg-pattern-circles.svg);
+    background-size: cover;
+    background-position: center;
+}
+.row3Right{
+    width: 50%;
+    margin-right: 3rem;
+    padding: 1rem;
+}
+.row3Left img{
+    width: 90%;
+    height: 32rem;
+    position: relative;
+    bottom: 4rem;
+}
+.row3Right p , .row3Right h2{
+    color: white;
+}
+.row3Right p{
+     color: hsl(240, 2%, 79%);
+     font-family: "Ubuntu", serif;
+     font-weight: 300;
+     font-style: normal;  
+}
+
+p{
+    line-height: 1.7rem;
 }
