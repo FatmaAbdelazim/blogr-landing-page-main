@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.br {
+    border: red solid 2px;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    max-height: 100vh;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 100%;
+
+}
+
+.row {
+    max-width: 100%;
+    margin-bottom: 3rem;
+}
+
+.part1 {
+    background-image: url(images/bg-pattern-intro-desktop.svg);
+    background-size: cover;
+    background-position: center;
+    background-color: hsl(356, 100%, 66%);
+    color: white;
+    border-radius: 0 0 0 3rem;
+    padding-top: 3rem;
+
+}
+
+.divPart1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom:1rem ;
+    align-items: center;
+}
+
+
+.display{
+    display: block;
+}
+.none{
+ display: none;   
+}
+.navPart1 div{
+    width: 8rem;
+    background-color: white;
+    color: black;
+    z-index: 1;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    position: relative;
+    top: 6rem;
+    right: 9rem;
+
+}
+.navPart1 div ul{
+    list-style: none;
+}
+.navPart1 div ul li{
+    margin: 0.5rem;
+}
+.navPart1 div ul li:hover{
+ font-weight: bolder;
+ cursor: pointer;
+}
+
+.icon {
+    background-color: white;
+    color: hsl(356, 100%, 66%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.2rem;
+    margin-left: 1.5rem;
+    padding: 0.7rem;
+    width: 8rem;
+}
+
+.icon2 {
+    width: 10rem;
+    background-color: white;
+    color: hsl(356, 100%, 66%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.2rem;
+    height: 2rem;
+    margin: 2rem;
+    padding: 1rem;
+}
+.navPart1{
+    display: flex;
+    align-items: center;  
+    justify-content: space-between;  
+}
+.navPart1 img{
+    margin-right: 3rem;
+}
+h1 {
+    margin: 1rem;
+    font-family: "Overpass", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3rem;
+}
+
+.icons ,.loginAndSign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    color: white;
+    text-decoration: none;
+    margin-right: 3rem;
+}
+span,p,i,a{
+    font-family: "Ubuntu", serif;
+    font-weight: 400;
+    font-style: normal;  
+}
+
+.icon2:hover,.icon:hover{
+   background-color: hsla(240, 2%, 90%, 0.767);
+   color: white;
+   cursor: pointer;
+}
+
+a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.rowDown{
+    display: flex;
+    max-width: 95%;
+    justify-content: center;
+    align-items: center;
+}
+.inner{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.left{
+    width: 50%;
+}
+.up,.down{
+     padding: 3rem;
+}
+.right{
+    width: 50%;
+}
+.right img{
+    width: 100%;
+    height: 37rem;
+    position: relative;
+    left: 14rem;
+}
+h3,h2{
+    color: hsl(208, 49%, 24%);
+    margin-bottom: 1rem;
+    font-family: "Overpass", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2rem;
+}
+h2{
+    margin-top: 2rem;
+}
+.up p , .down p{
+    color: hsl(207, 13%, 34%);
+}
