@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
@@ -29,9 +28,9 @@
 
   <main>
     <div class="container">
-      <div class="row part1">
+      <div class="row row1">
         <nav>
-          <div class="navPart1">
+          <div class="navRow1">
             <img src="images/logo.svg" alt="logo">
             <a href="#" onclick="onclickProduct()">Product
               <i class="fa-solid fa-chevron-down" id="aProduct"></i>
@@ -73,8 +72,12 @@
               <span>Sign Up</span>
             </div>
           </div>
+
+          <div id="menu">
+            <img src="images/icon-hamburger.svg" alt="" class="menuImage" onclick="onClickMenu()">
+          </div>
         </nav>
-        <div class="divPart1">
+        <div class="divRow1">
           <h1>A modern publishing platform</h1>
           <p>Grow your audience and build your online brand</p>
           <div class="icons">
@@ -88,7 +91,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="inner">
+        <div class="row2">
           <h2>Designed for the future</h2>
           <div class="rowDown">
             <div class="left">
@@ -157,6 +160,52 @@
           </div>
         </div>
       </div>
+
+      <div class="row">
+        <div class="navHidden none">
+          <a href="#" onclick="onclickHProduct()">Product
+            <i class="fa-solid fa-chevron-down" id="haProduct"></i>
+          </a>
+          <div id="hproduct" class="none">
+            <ul>
+              <li>Overview</li>
+              <li>Pricing</li>
+              <li>Marketplace</li>
+              <li>Features</li>
+              <li>Integrations</li>
+            </ul>
+          </div>
+          <a href="#" onclick="onclickHCompany()">Company
+            <i class="fa-solid fa-chevron-down" id="haCompany"></i>
+          </a>
+          <div id="hcompany" class="none">
+            <ul>
+              <li>About</li>
+              <li>Team</li>
+              <li>Blog</li>
+              <li>Careers</li>
+            </ul>
+          </div>
+          <a href="#" onclick="onclickHConnect()">Connect
+            <i class="fa-solid fa-chevron-down" id="haConnect"></i>
+          </a>
+          <div id="hconnect" class="none">
+            <ul>
+              <li>Contact</li>
+              <li>Newsletter</li>
+              <li>LinkedIn</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="hloginAndSign">
+            <span class="span">Login</span>
+            <div class="hicon">
+              <span>Sign Up</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </main>
   <footer>
@@ -171,29 +220,24 @@
           <li>Features</li>
           <li>Integrations</li>
         </div>
-      <div>
+        <div>
           <a href="#">Company </a>
           <li>About</li>
           <li>Team</li>
           <li>Blog</li>
           <li>Careers</li>
-      </div>
-      <div>
+        </div>
+        <div>
           <a href="#">Connect</a>
           <li>Contact</li>
           <li>Newsletter</li>
           <li>LinkedIn</li>
-      </div>
+        </div>
       </div>
     </div>
   </footer>
 
   <script src="task.js"></script>
-
-  <!-- <div class="attribution">
-  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-  Coded by <a href="#">Fatma Abdelazim Mohamed</a>.
-</div> -->
 
 </body>
 

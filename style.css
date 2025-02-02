@@ -32,7 +32,7 @@ body {
     margin-bottom: 3rem;
 }
 
-.part1 {
+.row1 {
     background-image: url(images/bg-pattern-intro-desktop.svg);
     background-size: cover;
     background-position: center;
@@ -43,7 +43,7 @@ body {
 
 }
 
-.divPart1 {
+.divRow1{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,15 +57,7 @@ nav {
     align-items: center;
 }
 
-
-.display{
-    display: block;
-}
-.none{
- display: none;   
-}
-
-#company , #product , #connect{
+#company , #product , #connect {
     width: 8rem;
     background-color: white;
     color: black;
@@ -86,10 +78,10 @@ nav {
  ul{
     list-style: none;
 }
-.navPart1 div ul li{
+.navRow1 div ul li{
     margin: 0.5rem;
 }
-.navPart1 div ul li:hover{
+.navRow1 div ul li:hover , .navHidden div ul li:hover{
  font-weight: bolder;
  cursor: pointer;
 }
@@ -118,21 +110,20 @@ nav {
     margin: 2rem;
     padding: 1rem;
 }
-.navPart1{
+.navRow1{
     display: flex;
     align-items: center;  
     justify-content: space-between;  
 }
-.navPart1 img{
+.navRow1 img{
     margin-right: 3rem;
 }
 h1 {
     margin: 1rem;
     font-family: "Overpass", serif;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 900;
     font-style: normal;
-    font-size: 3rem;
 }
 
 .icons ,.loginAndSign{
@@ -168,7 +159,7 @@ a:hover{
     justify-content: center;
     align-items: center;
 }
-.inner{
+.row2{
     display: flex;
     flex-direction: column;
     max-width: 100%;
@@ -284,4 +275,215 @@ p{
 }
 .part5 a{
   margin-left: 1rem ;
+}
+
+#menu{
+    display: none;
+}
+.display{
+    display: block;
+}
+.none{
+ display: none;   
+}
+@media screen and (max-width: 800px){
+
+    #menu{
+        display: block;
+    }
+    html{
+        font-size: 10px;
+    }
+    .row1 {
+        background-image: url(images/bg-pattern-intro-mobile.svg);
+        width: 100%;
+    }
+    .loginAndSign,.row1 a{
+        display: none;
+    }
+    .row{
+       width: 100%;
+    }
+    .divRow1{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .rowDown{
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        margin-inline: 2rem;
+        margin-top: 1rem;
+    }
+    .rowDown .left,.rowDown .right{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .rowDown .right img{
+        position: relative;
+        left: 0rem;
+    }
+    .up , .down{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 90%;
+    }
+    .row2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+ 
+    .row3{
+        display: flex;
+        background-color: hsl(237, 17%, 21%);
+        width: 100%;
+        border-radius: 0 5rem 0 5rem;
+        flex-wrap: wrap;
+        margin-block: 15rem;
+        height: 30rem;
+ 
+    }
+
+    .row3Left , .row3Right{
+        width: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .row3Left{
+        margin-inline: 2rem;
+    }
+    .row3Right{
+        margin-inline: 2rem;
+        padding: 1rem;
+        position: relative;
+        bottom: 16rem;
+        flex-direction: column;
+    }
+    .row3Left img{
+        width: 85%;
+        height: auto;
+        position: relative;
+        bottom: 14rem;
+    }
+    .row4Down{
+        flex-wrap: wrap;
+        margin-inline: 1rem;
+    }
+    .left4,.right4{
+        width: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .right4 img{
+        position: relative;
+        right: 0rem;
+        height: auto;
+        width: 100%;
+    }
+    .part5{
+        flex-wrap: wrap;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .part5 div{
+        margin: 2rem;
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .part5 a{
+        margin-left: 3rem ;
+      }
+      .icon2 {
+        height: 3rem;
+      }
+     .icon{
+        margin-top: 2rem;
+     }
+     .navHidden{
+        width: 90%;
+        margin-inline: 2rem;
+        position: absolute;
+        top: 8rem;
+        padding: 2rem;
+        background-color: white;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 1rem;
+    }
+    .flex{
+        display: flex;
+    }
+    .navHidden a {
+        color: hsl(208, 49%, 24%);
+        margin-top:  3rem;
+        font-weight: bolder;
+        font-size: larger;
+        margin-bottom:  2rem;
+    }
+    .hloginAndSign{
+        display: flex;
+        flex-direction: column;
+    }
+    .span{
+        color:  hsl(207, 13%, 34%);
+    }
+    .navHidden a i{
+        color: hsl(356, 100%, 66%);
+    }
+    #hcompany , #hproduct , #hconnect{
+        width: 80%;
+        background-color:  hsl(240, 3%, 79%,0.2);
+        border-radius: 1rem;
+        text-align: center;
+    }
+    ul li{
+        margin: 1rem;
+    }
+    hr{
+        margin: 2rem;
+        width: 80%;
+        color:  hsl(240, 2%, 79%);
+    }
+    .hloginAndSign
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+    .hicon{
+        background-color: hsl(356, 100%, 66%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1.2rem;
+        margin-top: 1.5rem;
+        padding: 0.7rem;
+        width: 10rem;
+        color: white;
+    }
+    nav{
+        display: flex;
+        margin-inline: 3rem;
+        justify-content: space-between;  
+    }
+    .navRow1 img{
+        width: 8rem;
+    }
 }
