@@ -38,12 +38,12 @@ body {
     background-position: center;
     background-color: hsl(356, 100%, 66%);
     color: white;
-    border-radius: 0 0 0 3rem;
+    border-radius: 0 0 0 4rem;
     padding-top: 3rem;
 
 }
 
-.divRow1{
+.divRow1 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,11 +53,13 @@ body {
 nav {
     display: flex;
     justify-content: space-around;
-    margin-bottom:1rem ;
+    margin-bottom: 1rem;
     align-items: center;
 }
 
-#company , #product , #connect {
+#company,
+#product,
+#connect {
     width: 8rem;
     background-color: white;
     color: black;
@@ -67,23 +69,29 @@ nav {
     top: 5rem;
     left: 18rem;
 }
-#company{
+
+#company {
     top: 5rem;
     left: 27rem;
 }
-#connect{
+
+#connect {
     top: 5rem;
     left: 35rem;
 }
- ul{
+
+ul {
     list-style: none;
 }
-.navRow1 div ul li{
+
+.navRow1 div ul li {
     margin: 0.5rem;
 }
-.navRow1 div ul li:hover , .navHidden div ul li:hover{
- font-weight: bolder;
- cursor: pointer;
+
+.navRow1 div ul li:hover,
+.navHidden div ul li:hover {
+    font-weight: bolder;
+    cursor: pointer;
 }
 
 .icon {
@@ -110,14 +118,17 @@ nav {
     margin: 2rem;
     padding: 1rem;
 }
-.navRow1{
+
+.navRow1 {
     display: flex;
-    align-items: center;  
-    justify-content: space-between;  
+    align-items: center;
+    justify-content: space-between;
 }
-.navRow1 img{
+
+.navRow1 img {
     margin-right: 3rem;
 }
+
 h1 {
     margin: 1rem;
     font-family: "Overpass", serif;
@@ -126,40 +137,49 @@ h1 {
     font-style: normal;
 }
 
-.icons ,.loginAndSign{
+.icons,
+.loginAndSign {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-a{
+
+a {
     color: white;
     text-decoration: none;
     margin-right: 3rem;
 }
-span,p,i,a{
+
+span,
+p,
+i,
+a {
     font-family: "Ubuntu", serif;
     font-weight: 400;
-    font-style: normal;  
+    font-style: normal;
 }
 
-.icon2:hover,.icon:hover{
-   background-color: hsla(240, 2%, 90%, 0.767);
-   color: white;
-   cursor: pointer;
+.icon2:hover,
+.icon:hover {
+    background-color: hsla(240, 2%, 90%, 0.767);
+    color: white;
+    cursor: pointer;
 }
 
-a:hover{
+a:hover {
     cursor: pointer;
     text-decoration: underline;
 }
 
-.rowDown,.row4Down{
+.rowDown,
+.row4Down {
     display: flex;
     max-width: 95%;
     justify-content: center;
     align-items: center;
 }
-.row2{
+
+.row2 {
     display: flex;
     flex-direction: column;
     max-width: 100%;
@@ -167,19 +187,27 @@ a:hover{
     align-items: center;
 }
 
-.left,.right,.right4,.left4{
+.left,
+.right,
+.right4,
+.left4 {
     width: 50%;
 }
-.up,.down{
-     padding: 3rem;
+
+.up,
+.down {
+    padding: 3rem;
 }
-.right img{
+
+.right img {
     width: 100%;
     height: 37rem;
     position: relative;
     left: 14rem;
 }
-h3,h2{
+
+h3,
+h2 {
     color: hsl(208, 49%, 24%);
     margin-bottom: 1rem;
     font-family: "Overpass", serif;
@@ -188,16 +216,19 @@ h3,h2{
     font-style: normal;
     font-size: 2rem;
 }
-h2{
+
+h2 {
     margin-top: 2rem;
 }
-.up p , .down p{
+
+.up p,
+.down p {
     color: hsl(207, 13%, 34%);
 }
 
 
 
-.row3{
+.row3 {
     display: flex;
     background-color: hsl(237, 17%, 21%);
     height: 22rem;
@@ -206,129 +237,156 @@ h2{
     margin-top: 7rem;
     margin-bottom: 6rem;
 }
-.row3Left{
+
+.row3Left {
     width: 50%;
     margin-left: 3rem;
     background-image: url(images/bg-pattern-circles.svg);
     background-size: cover;
     background-position: center;
 }
-.row3Right{
+
+.row3Right {
     width: 50%;
     margin-right: 3rem;
     padding: 1rem;
 }
-.row3Left img{
+
+.row3Left img {
     width: 90%;
     height: 32rem;
     position: relative;
     bottom: 4rem;
 }
-.row3Right p , .row3Right h2{
+
+.row3Right p,
+.row3Right h2 {
     color: white;
 }
-.row3Right p{
-     color: hsl(240, 2%, 79%);
-     font-family: "Ubuntu", serif;
-     font-weight: 300;
-     font-style: normal;  
+
+.row3Right p {
+    color: hsl(240, 2%, 79%);
+    font-family: "Ubuntu", serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
-p{
+p {
     line-height: 1.7rem;
 }
-.right4 img{
+
+.right4 img {
     width: 120%;
     height: 37rem;
     position: relative;
     right: 13.5rem;
 }
 
-.left .up,.left .down{
+.left .up,
+.left .down {
     padding-right: 1rem;
 }
 
-.part5{
+.part5 {
     width: 100%;
     background-color: hsl(240, 10%, 16%);
     display: flex;
     padding-inline: 8rem;
     justify-content: space-between;
-    border-radius: 0 3.5rem 0 0;
+    border-radius: 0 4rem 0 0;
     padding-block: 3rem;
     margin-top: 3rem;
 }
 
-.part5 li{
+.part5 li {
     color: hsl(207, 13%, 34%);
     margin: 0.5rem;
     padding: 0.5rem;
     list-style: none;
 }
-.part5 img{
+
+.part5 img {
     width: 7rem;
     height: 3rem;
 }
-.part5 li:hover{
-  cursor: pointer;
-  text-decoration: underline;
-}
-.part5 a{
-  margin-left: 1rem ;
+
+.part5 li:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
-#menu{
+.part5 a {
+    margin-left: 1rem;
+}
+
+#menu {
     display: none;
 }
-.display{
+
+.display {
     display: block;
 }
-.none{
- display: none;   
-}
-@media screen and (max-width: 800px){
 
-    #menu{
+.none {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+
+    #menu {
         display: block;
     }
-    html{
+
+    html {
         font-size: 10px;
     }
+
     .row1 {
         background-image: url(images/bg-pattern-intro-mobile.svg);
         width: 100%;
+        border-radius: 0 0 0 6rem;
     }
-    .loginAndSign,.row1 a{
+
+    .loginAndSign,
+    .row1 a,
+    .navRow1 div {
         display: none;
     }
-    .row{
-       width: 100%;
+
+    .row {
+        width: 100%;
     }
-    .divRow1{
+
+    .divRow1 {
         width: 100%;
         align-items: center;
         justify-content: center;
     }
 
-    .rowDown{
+    .rowDown {
         width: 100%;
         flex-wrap: wrap;
         flex-direction: column-reverse;
         margin-inline: 2rem;
         margin-top: 1rem;
     }
-    .rowDown .left,.rowDown .right{
+
+    .rowDown .left,
+    .rowDown .right {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
         width: 100%;
     }
-    .rowDown .right img{
+
+    .rowDown .right img {
         position: relative;
         left: 0rem;
     }
-    .up , .down{
+
+    .up,
+    .down {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -336,70 +394,82 @@ p{
         text-align: center;
         width: 90%;
     }
-    .row2{
+
+    .row2 {
         display: flex;
         justify-content: center;
         align-items: center;
     }
- 
-    .row3{
+
+    .row3 {
         display: flex;
         background-color: hsl(237, 17%, 21%);
         width: 100%;
-        border-radius: 0 5rem 0 5rem;
+        border-radius: 0 7rem 0 7rem;
         flex-wrap: wrap;
         margin-block: 15rem;
         height: 30rem;
- 
+
     }
 
-    .row3Left , .row3Right{
+    .row3Left,
+    .row3Right {
         width: 100%;
         align-items: center;
         display: flex;
         justify-content: center;
         text-align: center;
     }
-    .row3Left{
+
+    .row3Left {
         margin-inline: 2rem;
     }
-    .row3Right{
+
+    .row3Right {
         margin-inline: 2rem;
         padding: 1rem;
         position: relative;
         bottom: 16rem;
         flex-direction: column;
     }
-    .row3Left img{
+
+    .row3Left img {
         width: 85%;
         height: auto;
         position: relative;
         bottom: 14rem;
     }
-    .row4Down{
+
+    .row4Down {
         flex-wrap: wrap;
         margin-inline: 1rem;
     }
-    .left4,.right4{
+
+    .left4,
+    .right4 {
         width: 100%;
         align-items: center;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
     }
-    .right4 img{
+
+    .right4 img {
         position: relative;
         right: 0rem;
         height: auto;
         width: 100%;
     }
-    .part5{
+
+    .part5 {
         flex-wrap: wrap;
         align-items: center;
         display: flex;
         justify-content: center;
+        border-radius: 0 6rem 0 0;
     }
-    .part5 div{
+
+    .part5 div {
         margin: 2rem;
         width: 100%;
         align-items: center;
@@ -407,16 +477,20 @@ p{
         flex-direction: column;
         justify-content: center;
     }
-    .part5 a{
-        margin-left: 3rem ;
-      }
-      .icon2 {
+
+    .part5 a {
+        margin-left: 3rem;
+    }
+
+    .icon2 {
         height: 3rem;
-      }
-     .icon{
+    }
+
+    .icon {
         margin-top: 2rem;
-     }
-     .navHidden{
+    }
+
+    .navHidden {
         width: 90%;
         margin-inline: 2rem;
         position: absolute;
@@ -427,47 +501,58 @@ p{
         align-items: center;
         border-radius: 1rem;
     }
-    .flex{
+
+    .flex {
         display: flex;
     }
+
     .navHidden a {
         color: hsl(208, 49%, 24%);
-        margin-top:  3rem;
+        margin-top: 3rem;
         font-weight: bolder;
         font-size: larger;
-        margin-bottom:  2rem;
+        margin-bottom: 2rem;
     }
-    .hloginAndSign{
+
+    .hloginAndSign {
         display: flex;
         flex-direction: column;
     }
-    .span{
-        color:  hsl(207, 13%, 34%);
+
+    .span {
+        color: hsl(207, 13%, 34%);
     }
-    .navHidden a i{
+
+    .navHidden a i {
         color: hsl(356, 100%, 66%);
     }
-    #hcompany , #hproduct , #hconnect{
+
+    #hcompany,
+    #hproduct,
+    #hconnect {
         width: 80%;
-        background-color:  hsl(240, 3%, 79%,0.2);
+        background-color: hsl(240, 3%, 79%, 0.2);
         border-radius: 1rem;
         text-align: center;
     }
-    ul li{
+
+    ul li {
         margin: 1rem;
     }
-    hr{
+
+    hr {
         margin: 2rem;
         width: 80%;
-        color:  hsl(240, 2%, 79%);
+        color: hsl(240, 2%, 79%);
     }
-    .hloginAndSign
-    {
+
+    .hloginAndSign {
         display: flex;
         justify-content: center;
         align-items: center;
-    } 
-    .hicon{
+    }
+
+    .hicon {
         background-color: hsl(356, 100%, 66%);
         display: flex;
         align-items: center;
@@ -478,12 +563,14 @@ p{
         width: 10rem;
         color: white;
     }
-    nav{
+
+    nav {
         display: flex;
         margin-inline: 3rem;
-        justify-content: space-between;  
+        justify-content: space-between;
     }
-    .navRow1 img{
+
+    .navRow1 img {
         width: 8rem;
     }
 }
